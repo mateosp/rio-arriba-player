@@ -1,0 +1,53 @@
+#rio-loader{
+
+position:absolute;
+
+inset:0;
+
+background:#000;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+z-index:100;
+
+transition:opacity .9s ease;
+
+}
+
+#rio-loader.hidden{
+
+opacity:0;
+
+pointer-events:none;
+
+}
+
+#rio-loader-circle{
+
+width:42px;
+
+height:42px;
+
+border-radius:50%;
+
+border:2px solid rgba(255,255,255,.25);
+
+border-top-color:white;
+
+animation:rio-spin .9s linear infinite;
+
+}
+
+@keyframes rio-spin{
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
