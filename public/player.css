@@ -15,6 +15,8 @@ body{
 
 #hero{
 
+    margin-top:300px;
+
     position:relative;
 
     width:100%;
@@ -39,11 +41,9 @@ body{
 
     object-fit:cover;
 
-    object-position:center;
+    object-position:center center;
 
-    z-index:1;
-
-    transition:opacity .6s ease;
+    z-index:0;
 
 }
 
@@ -143,7 +143,7 @@ body{
 
     bottom:30px;
 
-    z-index:5;
+    z-index:10;
 
     padding:12px 18px;
 
@@ -166,5 +166,21 @@ body{
 #rio-arriba-sound:hover{
 
     background:rgba(255,255,255,.22);
+
+}
+
+section[data-section-id="6a0ddbe3fae88f638f3addb2"]{
+    position:relative !important;
+    overflow:hidden !important;
+}
+
+section[data-section-id="6a0ddbe3fae88f638f3addb2"] .content-wrapper,
+section[data-section-id="6a0ddbe3fae88f638f3addb2"] .sqs-layout,
+section[data-section-id="6a0ddbe3fae88f638f3addb2"] .fluid-engine,
+section[data-section-id="6a0ddbe3fae88f638f3addb2"] .section-border{
+
+    position:relative;
+
+    z-index:5;
 
 }

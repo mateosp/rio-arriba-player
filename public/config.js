@@ -1,6 +1,8 @@
 window.RioArribaConfig = {
 
-    heroSelector: "#hero",
+    heroSelector:         document.querySelector('section[data-section-id="6a0ddbe3fae88f638f3addb2"]')
+            ? 'section[data-section-id="6a0ddbe3fae88f638f3addb2"]'
+            : '#hero',
 
     video:
 
