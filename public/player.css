@@ -169,18 +169,114 @@ body{
 
 }
 
+/* ===========================================================
+   HERO SQUARESPACE
+=========================================================== */
+
 section[data-section-id="6a0ddbe3fae88f638f3addb2"]{
+
     position:relative !important;
+
+    min-height:100vh !important;
+
+    height:100vh !important;
+
     overflow:hidden !important;
+
+    padding-top:0 !important;
+
 }
 
-section[data-section-id="6a0ddbe3fae88f638f3addb2"] .content-wrapper,
-section[data-section-id="6a0ddbe3fae88f638f3addb2"] .sqs-layout,
-section[data-section-id="6a0ddbe3fae88f638f3addb2"] .fluid-engine,
+/* ===========================================================
+   FONDO
+=========================================================== */
+
 section[data-section-id="6a0ddbe3fae88f638f3addb2"] .section-border{
+
+    position:absolute !important;
+
+    inset:0;
+
+    z-index:0;
+
+}
+
+section[data-section-id="6a0ddbe3fae88f638f3addb2"] .section-background{
+
+    position:absolute !important;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    overflow:hidden;
+
+}
+
+/* ===========================================================
+   VIDEO
+=========================================================== */
+
+#rio-arriba-video{
+
+    position:absolute !important;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center center;
+
+    z-index:0;
+
+}
+
+/* ===========================================================
+   CONTENIDO
+=========================================================== */
+
+section[data-section-id="6a0ddbe3fae88f638f3addb2"] .content-wrapper{
 
     position:relative;
 
-    z-index:5;
+    z-index:20;
+
+    height:100%;
+
+}
+
+/* ===========================================================
+   OVERLAY
+=========================================================== */
+
+#rio-arriba-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:10;
+
+}
+
+/* ===========================================================
+   BOTÓN
+=========================================================== */
+
+#rio-arriba-sound{
+
+    position:absolute;
+
+    right:30px;
+
+    bottom:30px;
+
+    z-index:30;
 
 }

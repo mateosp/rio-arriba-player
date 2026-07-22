@@ -4,7 +4,7 @@ class RioArribaPlayer {
 
         this.config = config;
 
-        this.hero = document.querySelector(config.heroSelector);
+        this.hero = null;
 
         this.video = null;
 
@@ -17,6 +17,8 @@ class RioArribaPlayer {
     }
 
     init() {
+
+        this.hero = document.querySelector(this.config.heroSelector);
 
         if (!this.hero) {
 
@@ -36,33 +38,44 @@ class RioArribaPlayer {
 
     }
 
-    createVideo() {
+createVideo() {
 
-        this.video = document.createElement("video");
+    this.video = document.createElement("video");
 
-        this.video.id = "rio-arriba-video";
+    this.video.id = "rio-arriba-video";
 
-        this.video.src = this.config.video;
+    this.video.src = this.config.video;
 
-        this.video.autoplay = this.config.autoplay;
+    this.video.autoplay = this.config.autoplay;
 
-        this.video.loop = this.config.loop;
+    this.video.loop = this.config.loop;
 
-        this.video.muted = this.config.muted;
+    this.video.muted = this.config.muted;
 
-        this.video.preload = "metadata";
+    this.video.preload = "metadata";
 
-        this.video.playsInline = true;
+    this.video.playsInline = true;
 
-        this.video.setAttribute("playsinline", "");
+    this.video.setAttribute("playsinline", "");
 
-        this.video.setAttribute("webkit-playsinline", "");
+    this.video.setAttribute("webkit-playsinline", "");
+
+    // Buscar el contenedor de fondo de Squarespace
+    const background = this.hero.querySelector(".section-background");
+
+    if (background) {
+
+       background.prepend(this.video);
+
+    } else {
 
         this.hero.prepend(this.video);
 
-        this.video.play().catch(() => {});
-
     }
+
+    this.video.play().catch(() => {});
+
+}
 
     createOverlay() {
 
