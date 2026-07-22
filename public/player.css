@@ -174,19 +174,11 @@ body{
 =========================================================== */
 
 section[data-section-id="6a0ddbe3fae88f638f3addb2"]{
-
-    position:relative !important;
-
-    min-height:100vh !important;
-
-    height:100vh !important;
-
-    overflow:hidden !important;
-
-    padding-top:0 !important;
-
+    position: relative !important;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    overflow: hidden !important;
 }
-
 /* ===========================================================
    FONDO
 =========================================================== */
@@ -278,5 +270,45 @@ section[data-section-id="6a0ddbe3fae88f638f3addb2"] .content-wrapper{
     bottom:30px;
 
     z-index:30;
+
+}
+
+/* HERO */
+
+section[data-section-id="6a0ddbe3fae88f638f3addb2"] .section-border{
+
+    position:absolute !important;
+
+    inset:0;
+
+}
+
+section[data-section-id="6a0ddbe3fae88f638f3addb2"] .section-background{
+
+    position:absolute !important;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+/* VIDEO */
+
+#rio-arriba-video{
+
+    position:absolute !important;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center center;
 
 }
