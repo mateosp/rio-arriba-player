@@ -283,6 +283,12 @@ section[data-section-id="6a0ddbe3fae88f638f3addb2"] .section-border{
 
 }
 
+section[data-section-id="6a0ddbe3fae88f638f3addb2"] .content-wrapper{
+
+    display: none;
+
+}
+
 section[data-section-id="6a0ddbe3fae88f638f3addb2"] .section-background{
 
     position:absolute !important;
